@@ -92,13 +92,10 @@ $conn = OpenCon();
 
     <main>
 
-
-
-        <div class="container gallery-container">
+        <div class="gallery-container bg-light pt-5">
             <h1>Mount Blue Hotel</h1>
 
-            <p class="page-description text-center">At the hotel, every room is fitted with a wardrobe, a balcony with a mountain view, a private bathroom, a flat-screen TV, bed linen and towels. Every room is equipped with a safety deposit box and some rooms here will provide you with pool views. All units will provide guests with a minibar.</p>
-
+            <p class="page-description text-center container">At the hotel, every room is fitted with a wardrobe, a balcony with a mountain view, a private bathroom, a flat-screen TV, bed linen and towels. Every room is equipped with a safety deposit box and some rooms here will provide you with pool views. All units will provide guests with a minibar.</p>
 
             <div>
                 <a href="pic/gallary2/1.jpg" data-fancybox="gallery">
@@ -160,20 +157,9 @@ $conn = OpenCon();
             </script>
         </div>
 
-
-
-        <!-- Three columns of text below the carousel -->
-
-
-
         <!-- FOOTER -->
-        <footer class="footer-view">
-            <div class="container">
-                <p class="float-end"><a href="#">Back to top</a></p>
-                <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <?php include 'footer.php'; ?>
 
-            </div>
-        </footer>
     </main>
 
 

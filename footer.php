@@ -21,7 +21,7 @@
             <!-- Contact -->
             <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
-                <p><i class="fa fa-home me-3"></i> Mirissa, Sri Lanka</p>
+                <p><i class="fa fa-home me-3"></i> Kandy, Sri Lanka</p>
                 <p><i class="fa fa-envelope me-3"></i> info@hotelmanagement.com</p>
                 <p><i class="fa fa-phone me-3"></i> +94 77 123 4567</p>
                 <p><i class="fa fa-globe me-3"></i> www.hotelmanagement.com</p>

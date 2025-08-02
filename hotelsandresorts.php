@@ -15,8 +15,6 @@ $conn = OpenCon();
         <meta name="generator" content="Hugo 0.84.0">
         <title>Bhari Hotels & Spas</title>
 
-
-
         <style>
             body {
                  padding-top: unset !important;
@@ -35,7 +33,6 @@ $conn = OpenCon();
                 }
             }
         </style>
-
 
         <!-- Custom styles for this template -->
         <link href="carousel.css" rel="stylesheet">
@@ -78,9 +75,6 @@ $conn = OpenCon();
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li> -->
                     </ul>
 
                 </div>
@@ -90,14 +84,11 @@ $conn = OpenCon();
 
 
     <main>
-
-
-
-        <div class="container gallery-container">
+        <div class="gallery-container bg-light pt-5">
 
             <h1>Greenacres Leisure Resort</h1>
 
-            <p class="page-description text-center">Situated in Kandy, 25 km from Kandy Royal Botanic Gardens, GreenAcres Leisure Resort features accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge. The property is around 32 km from Kandy City Center Shopping Mall, 33 km from Sri Dalada Maligawa and 33 km from Kandy Museum. The hotel offers mountain views, a terrace, a 24-hour front desk, and free WiFi is available.</p>
+            <p class="page-description text-center container">Situated in Kandy, 25 km from Kandy Royal Botanic Gardens, GreenAcres Leisure Resort features accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge. The property is around 32 km from Kandy City Center Shopping Mall, 33 km from Sri Dalada Maligawa and 33 km from Kandy Museum. The hotel offers mountain views, a terrace, a 24-hour front desk, and free WiFi is available.</p>
 
             <div class="tz-gallery">
 
@@ -129,11 +120,8 @@ $conn = OpenCon();
                         </a>
                     </div>
 
-
                 </div>
-
             </div>
-
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
@@ -141,19 +129,9 @@ $conn = OpenCon();
             baguetteBox.run('.tz-gallery');
         </script>
 
-
-        <!-- Three columns of text below the carousel -->
-
-
-
         <!-- FOOTER -->
-        <footer class="footer-view">
-            <div class="container">
-                <p class="float-end"><a href="#">Back to top</a></p>
-                <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <?php include 'footer.php'; ?>
 
-            </div>
-        </footer>
     </main>
 
 
