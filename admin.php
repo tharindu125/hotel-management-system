@@ -36,16 +36,15 @@ $conn = OpenCon();
             ?>
             <br></br>
             <p class="light">
-                <!-- <a href="#">Forgot password?</a> -->
+                <a href="#">Forgot password?</a>
             </p>
         </div>
         <button type="submit">Continue</button>
     </form>
 
     <footer>
-        <!-- <button type="submit">Continue</button> -->
         <p>
-            <!-- Don't have an account? <a href="#">Sign Up</a> -->
+            Don't have an account? <a href="adminSignIn.php">Sign Up</a>
         </p>
     </footer>
 </div>

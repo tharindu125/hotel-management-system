@@ -20,13 +20,8 @@ $conn = OpenCon();
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 
-
-
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
@@ -45,27 +40,30 @@ $conn = OpenCon();
                 $row = mysqli_fetch_assoc($result);
 
                 echo $row['rn_name']; ?> / <?php echo $row['rn_emp_no'];
-                                        } elseif ($type == 1) {
-                                            $sql = "  SELECT * FROM rn_customers rc WHERE rc.rn_cus_id ='$id'";
-                                            $result = mysqli_query($conn, $sql);
-                                            $row = mysqli_fetch_assoc($result);
-                                            echo $row['rn_cus_name']; ?> / <?php echo $row['rn_cus_id'];
+            } elseif ($type == 1) {
+                $sql = "  SELECT * FROM rn_customers rc WHERE rc.rn_cus_id ='$id'";
+                $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+                echo $row['rn_cus_name']; ?> / <?php echo $row['rn_cus_id'];
 
-                                                                            $where = " WHERE rb.ref_rn_emp_id = '$id'";
-                                                                        } else {
-                                                                            $sql = "SELECT * FROM rn_hotel_travel_comapny rhtc  WHERE rhtc.rn_hotel_trvel_com_id = '$id'";
-                                                                            $result = mysqli_query($conn, $sql);
-                                                                            $row = mysqli_fetch_assoc($result);
-                                                                            echo $row['rn_hotel_trvel_com_name'];
-                                                                        }
-                                                                            ?>Bhari Hotel</a>
+                $where = " WHERE rb.ref_rn_emp_id = '$id'";
+            } else {
+                $sql = "SELECT * FROM rn_hotel_travel_comapny rhtc  WHERE rhtc.rn_hotel_trvel_com_id = '$id'";
+                $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+                echo $row['rn_hotel_trvel_com_name'];
+            } ?>
+            Bhari Hotel
+        </a>
+
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-
                 <?php echo $row['rn_name']; ?> / <?php echo $row['rn_emp_no']; ?>
                 <a class="nav-link px-3" href="logout.php"> Log out</a>
             </div>
@@ -75,80 +73,78 @@ $conn = OpenCon();
     <div class="container-fluid">
         <div class="row">
             <?php
-
             if ($type == 0) { //amin
 
                 $booking = "SELECT COUNT(re.rn_emp_id) AS OK FROM rn_employee re
-LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
-WHERE rl.rn_login_user_type IN ('0')  AND
-re.rn_emp_id ='" . $id . "'";
+                            LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
+                            WHERE rl.rn_login_user_type IN ('0')  AND
+                            re.rn_emp_id ='" . $id . "'";
                 $resultbooking = mysqli_query($conn, $booking);
                 $row_bookings = mysqli_fetch_assoc($resultbooking);
                 $check_booking = $row_bookings["OK"];
 
-
-
                 $emp = "SELECT COUNT(re.rn_emp_id) AS OK FROM rn_employee re
-    LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
-    WHERE rl.rn_login_user_type IN ('0')  AND
-    re.rn_emp_id ='" . $id . "'";
+                LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
+                WHERE rl.rn_login_user_type IN ('0')  AND
+                re.rn_emp_id ='" . $id . "'";
                 $resulemp  = mysqli_query($conn, $emp);
                 $row_emp = mysqli_fetch_assoc($resulemp);
-                $check_row_emp = $row_emp["OK"];
 
+                $check_row_emp = $row_emp["OK"];
                 $check_cust = 1;
                 $check_config = 1;
-
                 $check_report = 1;
 
                 $page = 'dashboard.php';
+
             } elseif ($type == 1) { //cus
 
-
-
                 $booking = "SELECT COUNT(rc.rn_cus_id) AS OK FROM rn_customers rc
-LEFT JOIN rn_login rl ON rc.rn_cus_id = rl.rn_login_user_id           
-WHERE rl.rn_login_user_type IN ('1')  AND
-rn_cus_id ='" . $id . "'";
+                            LEFT JOIN rn_login rl ON rc.rn_cus_id = rl.rn_login_user_id           
+                            WHERE rl.rn_login_user_type IN ('1')  AND
+                            rn_cus_id ='" . $id . "'";
 
                 $resultbooking = mysqli_query($conn, $booking);
                 $row_bookings = mysqli_fetch_assoc($resultbooking);
-                $check_booking = $row_bookings["OK"];
 
+                $check_booking = $row_bookings["OK"];
                 $check_row_emp = 0;
                 $check_config = 0;
                 $check_cust = 1;
                 $check_report = 0;
+
                 $page = 'dashboardCus.php';
                 $page3 = '';
                 $page2 = '';
+
             } elseif ($type == 3) { //mgt
 
                 $booking = "SELECT COUNT(re.rn_emp_id) AS OK FROM rn_employee re
-    LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
-    WHERE rl.rn_login_user_type IN ('3')  AND
-    re.rn_emp_id ='" . $id . "'";
+                            LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
+                            WHERE rl.rn_login_user_type IN ('3')  AND
+                            re.rn_emp_id ='" . $id . "'";
+                            
                 $resultbooking = mysqli_query($conn, $booking);
                 $row_bookings = mysqli_fetch_assoc($resultbooking);
                 $check_booking = $row_bookings["OK"];
 
-
                 $emp = "SELECT COUNT(re.rn_emp_id) AS OK FROM rn_employee re
-    LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
-    WHERE rl.rn_login_user_type IN ('3')  AND
-    re.rn_emp_id ='" . $id . "'";
+                LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
+                WHERE rl.rn_login_user_type IN ('3')  AND
+                re.rn_emp_id ='" . $id . "'";
 
                 $resulemp  = mysqli_query($conn, $emp);
                 $row_emp = mysqli_fetch_assoc($resulemp);
-                $check_row_emp = $row_emp["OK"];
 
-                $check_config = 0;
-                $check_cust = 0;
+                $check_row_emp = $row_emp["OK"];
+                $check_config = 1;
+                $check_cust = 1;
                 $check_report = 1;
 
                 $page = 'dashboard.php';
                 $page2 = 'dashboardCus.php';
                 $page3 = 'dashboardtravel.php';
+
             } elseif ($type == 4) { //travel
 
                 $page3 = '';
@@ -156,40 +152,40 @@ rn_cus_id ='" . $id . "'";
                 $page = 'dashboardtravel.php';
 
                 $booking = "SELECT COUNT(rl.rn_login_id) AS OK FROM rn_hotel_travel_comapny rhtc
-    LEFT JOIN rn_login rl ON rhtc.rn_hotel_trvel_com_id = rl.rn_login_user_id
-WHERE rl.rn_login_user_type IN ('4')  AND
-rhtc.rn_hotel_trvel_com_id ='" . $id . "'";
+                            LEFT JOIN rn_login rl ON rhtc.rn_hotel_trvel_com_id = rl.rn_login_user_id
+                            WHERE rl.rn_login_user_type IN ('4')  AND
+                            rhtc.rn_hotel_trvel_com_id ='" . $id . "'";
 
                 $resultbooking = mysqli_query($conn, $booking);
                 $row_bookings = mysqli_fetch_assoc($resultbooking);
+
                 $check_booking = $row_bookings["OK"];
                 $check_row_emp = 0;
                 $check_config = 0;
                 $check_cust = 0;
-
                 $check_report = 0;
+
             } else { //clark
 
                 $booking = "SELECT COUNT(re.rn_emp_id) AS OK FROM rn_employee re
-LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
-WHERE rl.rn_login_user_type IN ('5')  AND
-re.rn_emp_id ='" . $id . "'";
+                            LEFT JOIN rn_login rl ON re.rn_emp_id = rl.rn_login_user_id           
+                            WHERE rl.rn_login_user_type IN ('5')  AND
+                            re.rn_emp_id ='" . $id . "'";
+                            
                 $resultbooking = mysqli_query($conn, $booking);
                 $row_bookings = mysqli_fetch_assoc($resultbooking);
-                $check_booking = $row_bookings["OK"];
 
+                $check_booking = $row_bookings["OK"];
                 $check_report = 0;
                 $check_row_emp = 0;
-
                 $check_config = 1;
-
                 $check_cust = 1;
+
                 $page = 'dashboard.php';
                 $page3 = '';
                 $page2 = '';
-            }
+            } ?>
 
-            ?>
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column">

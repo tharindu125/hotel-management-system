@@ -15,25 +15,6 @@ $conn = OpenCon();
     <meta name="generator" content="Hugo 0.84.0">
     <title>Bhari Hotels & Spas</title>
 
-
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
 </head>
@@ -72,9 +53,6 @@ $conn = OpenCon();
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li> -->
                     </ul>
 
                 </div>
@@ -93,36 +71,36 @@ $conn = OpenCon();
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                     <img src="pic/pic/9.jpg" width="100%" height="100%">
                     <div class="container">
                         <div class="carousel-caption text-start">
 
                             <h1>BR Hotels & Resorts</h1>
-                            <!-- <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                     <img src="pic/pic/10.jpg" width="100%" height="100%">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>BR Hotels & Resorts.</h1>
-                            <!-- <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                     <img src="pic/pic/11.jpg" width="100%" height="100%">
                     <div class="container">
                         <div class="carousel-caption text-end">
                             <h1>BR Hotels & Resorts.</h1>
-                            <!-- <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
                         </div>
                     </div>
                 </div>
@@ -206,10 +184,10 @@ $conn = OpenCon();
                                 <input class="form-control width-100" type="password" name="cusspass" id="cusspass" value="" />
                                 <br />
 
-                                <!-- <div class="mb-3 form-check form-switch">
+                                <div class="mb-3 form-check form-switch">
                                     <input class="form-check-input" type="checkbox" id="issue" name="issue" checked>
                                     <label class="form-check-label" for="flexSwitchCheckChecked">Account Issue</label>
-                                </div> -->
+                                </div>
 
                                 <?php if (isset($_GET['msg'])) { ?>
 
@@ -228,6 +206,7 @@ $conn = OpenCon();
 
             </div>
         </div>
+
         <!-- FOOTER -->
         <footer class="footer-view">
             <div class="container">
@@ -315,6 +294,20 @@ $conn = OpenCon();
     .width-100 {
         width: 100% !important;
     }
+
+    .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
 </style>
 
 <?php

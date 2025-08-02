@@ -79,9 +79,9 @@ while ($row = $result->fetch_assoc()) {
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li> -->
+          </li>
           </ul>
 
         </div>
@@ -100,36 +100,36 @@ while ($row = $result->fetch_assoc()) {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
           <img src="pic/pic/9.jpg" width="100%" height="100%">
           <div class="container">
             <div class="carousel-caption text-start">
 
               <h1>Bhari Hotels & Resorts</h1>
-              <!-- <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
           <img src="pic/pic/10.jpg" width="100%" height="100%">
           <div class="container">
             <div class="carousel-caption">
               <h1>Bhari Hotels & Resorts.</h1>
-              <!-- <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
           <img src="pic/pic/11.jpg" width="100%" height="100%">
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>Bhari Hotels & Resorts.</h1>
-              <!-- <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -244,7 +244,6 @@ while ($row = $result->fetch_assoc()) {
         <p class="lead">Discover a glorious world of palm fringed beaches, lush tea plantations, mist capped mountain ranges and the allure of golden sandy private beaches. Scattered in the most scenic and historic locations, providing easy access to breathtaking pleasures of nature, our Sri Lankan Resorts extend outstanding hospitality with a touch of cultural elegance.Luxury Hotels in Sri Lanka.</p>
       </div>
       <div class="col-md-5">
-        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
         <img src="pic/pic/14.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
       </div>
     </div>
@@ -257,15 +256,13 @@ while ($row = $result->fetch_assoc()) {
         <p class="lead">The safety and wellbeing of our guests has, and will always be our top priority. We have implemented a series of measures recommended by local medical authorities and travel associations which adhere to stringent standards of hygiene and cleanliness, to safeguard guests and staff members from COVID-19.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
         <img src="pic/pic/16.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
       </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
-
+    <div class="container row featurette">
 
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -291,10 +288,10 @@ while ($row = $result->fetch_assoc()) {
     </div>
 
     <hr class="featurette-divider">
+
     <form class="d-flex">
-      NEWSLETTER
-      SUBSCRIPTION
-      <input class="form-control me-2" type="text" placeholder="Your email" aria-label="Search">
+      NEWSLETTER SUBSCRIPTION
+      <input class="form-control me-2 form-Subscribe" type="text" placeholder="Your email" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Subscribe</button>
     </form>
     <!-- /END THE FEATURETTES -->
@@ -302,23 +299,51 @@ while ($row = $result->fetch_assoc()) {
     </div><!-- /.container -->
 
 
-    <!-- FOOTER -->
-    <footer class="footer-view">
-      <div class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2021–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-
-      </div>
-    </footer>
   </main>
 
+  <!-- FOOTER -->
+  <?php include 'footer.php'; ?>
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 
 </html>
+
+<?php
+if (isset($_POST["hotelId"])) {
+
+  $startDate = $_POST["startDate"];
+  $hotelId = $_POST["hotelId"];
+  $endDate = $_POST["endDate"];
+  $roomCount = $_POST["roomCount"];
+
+
+  $sql = "SELECT COUNT(rhbr.rn_hotel_booking_room_final_status) AS Avel FROM rn_hotel_booking_room rhbr WHERE rhbr.ref_rn_hotel_id =5";
+  $result = mysqli_query($conn, $sql);
+  $row = mysqli_fetch_assoc($result);
+
+  if ($row["Avel"] >= $roomCount) {
+
+    $query = array(
+      'startDate' => $_POST["startDate"],
+      'hotelId' => $_POST["hotelId"],
+      'endDate' => $_POST["endDate"],
+      'roomCount' => $_POST["roomCount"]
+    );
+
+    $query = http_build_query($query);
+    header("Location: bookNow.php?$query");
+
+  } else {
+
+    header("refresh:10;url=index.php?no=no");
+  }
+
+  $conn->close();
+  ob_end_flush();
+}
+?>
 
 <style>
   .welcome-wrapper {
@@ -335,10 +360,6 @@ while ($row = $result->fetch_assoc()) {
     height: 42px;
     width: 100%;
     border-radius: 50%;
-  }
-
-  .bg-dark {
-    background-color: #6c757d !important;
   }
 
   .footer-view {
@@ -385,40 +406,9 @@ while ($row = $result->fetch_assoc()) {
     margin-bottom: 40px;
     box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
   }
-</style>
 
-
-<?php
-if (isset($_POST["hotelId"])) {
-
-  $startDate = $_POST["startDate"];
-  $hotelId = $_POST["hotelId"];
-  $endDate = $_POST["endDate"];
-  $roomCount = $_POST["roomCount"];
-
-  
-
-  $sql = "SELECT COUNT(rhbr.rn_hotel_booking_room_final_status) AS Avel FROM rn_hotel_booking_room rhbr WHERE rhbr.ref_rn_hotel_id =5";
-  $result = mysqli_query($conn, $sql);
-  $row = mysqli_fetch_assoc($result);
-
-  if ($row["Avel"] >= $roomCount) {
-
-    $query = array(
-      'startDate' => $_POST["startDate"],
-      'hotelId' => $_POST["hotelId"],
-      'endDate' => $_POST["endDate"],
-      'roomCount' => $_POST["roomCount"]
-    );
-
-    $query = http_build_query($query);
-    header("Location: bookNow.php?$query");
-  } else {
-
-
-    header("refresh:10;url=index.php?no=no");
+  .form-Subscribe {
+    margin-left: 20px;
+    width: 50%;
   }
-
-  $conn->close();
-  ob_end_flush();
-}
+</style>

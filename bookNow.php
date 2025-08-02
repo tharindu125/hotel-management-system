@@ -15,8 +15,6 @@ $conn = OpenCon();
     <meta name="generator" content="Hugo 0.84.0">
     <title>Bhari Hotels & Spas</title>
 
-
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -32,7 +30,6 @@ $conn = OpenCon();
             }
         }
     </style>
-
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">

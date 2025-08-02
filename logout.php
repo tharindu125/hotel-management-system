@@ -1,5 +1,5 @@
 <html>
-<title>abc</title>
+<title>logout</title>
 
 <body>
     <?php
